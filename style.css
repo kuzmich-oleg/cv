@@ -1,0 +1,86 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Oswald Regular,Tahoma,sans-serif;
+}
+
+html { min-width: 350px; }
+
+body { background-color: #f0f2f4;}
+	
+
+.mainInfo {
+	position: absolute;
+	top: 8%;
+	width: 38%;	
+}
+
+.left { left: 10%;}
+
+.education {
+	right: 10%;
+	background-color: #f9f9f9;
+}
+
+.subMain { 	margin: 0 0 4% 0; }
+
+.subMain, .education {
+	border: 2px solid #f0f2f4;
+}
+
+.subMain:hover, .education:hover {
+	border: 2px solid white;
+}
+
+.likeAHeader {
+	padding: 10px;
+	background-color: #199cb0;
+	text-align: center;
+	color: #fff;
+	font-size: 150%;
+}
+
+.text {
+	padding: 1.5% 3%;
+	background-color: #f9f9f9;
+}
+
+.textInfo {
+	position: relative;
+	padding: 5px 10px;
+}
+
+.textInfo > div {
+	width: 50%;
+}
+
+.infoLeft{ float: left; }
+
+.infoRight { margin: 0 0 0 50%; }
+
+@media screen and (max-width: 1000px){
+	
+	.text { font-size: 15px;}
+	.mainInfo {	width: 45%;	}
+	.left { left: 3%;}
+	.education { right: 3%;}
+}
+
+@media screen and (max-width: 800px){
+	
+	.mainInfo, .education {
+		position: static;
+		width: 90%;
+		margin: 5% auto;
+	}
+	
+	.textAlignCenter { text-align: center; }
+}
+
+@media screen and (max-width: 800px){
+	.text {
+		padding: 0;
+		font-size: 13px;
+	}
+}
